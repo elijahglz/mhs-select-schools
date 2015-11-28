@@ -16,10 +16,6 @@
                 box-sizing: border-box;
             }
             
-            strong {
-                font-size: 18px;
-            }
-            
             .container {
                 width: 608px;
                 margin-right: auto;
@@ -56,7 +52,15 @@
             section {
                 margin-bottom: 40px;
             }
-
+            
+            .pull-right {
+                float: right;
+            }
+            
+            .pull-left {
+                float: left;
+            }
+            
             .bio {
                 background-color:#616362;
                 color: #FFFFFF;
@@ -66,12 +70,12 @@
                 position: relative;
             }
             
-            .media-right {
-                float: right;
+            .bio:last-of-type {
+                margin-bottom: 0;
             }
             
-            .media-left {
-                float: left;
+            .bio h3 {
+                margin-top: 0;
             }
             
             .icon {
@@ -109,150 +113,176 @@
                 height: 80px;
                 padding-right: 8px;
             }
+            
+            p {
+                margin-top: 0;
+                margin-bottom: 22px;
+            }
+            
+            p:last-of-type {
+                margin-bottom: 0;
+            }
+            
+            h2 {
+                font-style: italic;
+            }
+            
+            hr {
+                border: none;
+                height: 1px;
+                background-color: #ffae19;
+            }
+            
+            .courses h4 {
+                margin-top: 20px;
+                margin-bottom: 8px;
+            }
         </style>
     </head>
+    
     <body>
         <div class="container"> 
             <section>
                 <div class="row">
-                        <h3><u><em>About our Medical Program</em></u></h3>
+                    <h2>About the Medical Program</h2>
 
-                        <div class="media-right">
-                            <div class="media-player">
-                                <img class="media-right icon" src="img/academy_logo_icon.png">
-                                <iframe name="media_player" width="396" height="230" src="vid/mojave_hs_spotlight.html" allowFullScreen></iframe>
-                                <div class="tracks">
-                                    <a target="media_player" href="vid/mojave_hs_spotlight.mp4"><img src="vid/mojave_hs_spotlight_thumbnail.png"></a>
-                                    <a target="media_player" href="vid/whats_cool_at_school.mp4"><img src="vid/whats_cool_at_school_thumbnail.png"></a>
-                                </div>
+                    <div class="pull-right">
+                        <div class="media-player">
+                            <img class="pull-right icon" src="img/academy_logo_icon.png">
+                            <iframe name="media_player" width="396" height="230" src="vid/mojave_hs_spotlight.html" allowFullScreen></iframe>
+                            <div class="tracks">
+                                <a target="media_player" href="vid/mojave_hs_spotlight.mp4">
+                                    <img src="vid/mojave_hs_spotlight_thumbnail.png" title="Medical Academny Spotlight">
+                                </a>
+                                <a target="media_player" href="vid/whats_cool_at_school.mp4">
+                                    <img src="vid/whats_cool_at_school_thumbnail.png" title="New 8 What's Cool at School">
+                                </a>
                             </div>
                         </div>
-
-                        <p>
-                            Have you ever thought of working in the medical field? Do you want a career in healthcare helping 
-                            people fight illness and return to function from injury? Are you interested in working hard in a 
-                            prestigious and rigorous program that gives you opportunities to learn actual medical skills with 
-                            actual patients? If the answer is yes to all of these questions, then applying to the Mojave Medical 
-                            Academy is a step you should take. The Mojave Medical Academy was established in 2013 and is now 
-                            offering students the opportunity to take medical classes that were previously only available to medical 
-                            magnet schools.
-                        </p>
-
-                        <p>
-                            The Mojave Medical Academy has a 3 year program sequence that you can start as a freshman or sophomore. 
-                            Our program currently has two branches of study that you will focus on during your second and 3rd year. 
-                            You can either choose a pathway in Physical Therapy/Sports Medicine or Medical Assisting. You will leave 
-                            our academy with an advanced knowledge of the healthcare field and actual patient care experience that 
-                            you can learn in our very own physical therapy/rehabilitation clinic.
-                        </p>
-
-                        <p>
-                            As a member of the Mojave Medical Academy, you will have a scrub uniform and take numerous field trips 
-                            during your time here. You will have the opportunity for observations, volunteer experiences and even 
-                            possible internships in our local medical community. You will be able to compete in national healthcare
-                            competitions against other students in the united states in health science programs and have chances to 
-                            win awards and scholarships.
-                        </p>
-
-                        <p>
-                            The benefits of the Mojave Medical Academy do not stop at graduation from high school, as now you will 
-                            have advanced preparation and training to work in the medical field directly after high school or excel 
-                            in college as you work towards professional careers in the medical field. You will confidently take 
-                            difficult classes on your way to becoming a physician, nurse, physical therapist, optometrist, pharmacist, 
-                            lab scientist, nuclear medicine specialist, and many other careers because of your advanced training by 
-                            the experienced faculty that direct the Mojave Medical Academy.
-                        </p>
-
-                </div>
-            </section>
-            
-            <section>
-                <div class="row"> 
-                    <div class="col-1-2">
-                        <strong><u>Physical Therapy/Sports Medicine/Orthapedics</u></strong>
-                        <ul>
-                            <li>Learn hands on examination skills of orthopedic injuries</li>
-                            <li>
-                                Help see real patients in our physical therapy/sports medicine clinic -- “Institute of Health, 
-                                Healing and Human Performance”
-                            </li>
-                            <li>Help treat patients in our physical therapy clinic with our licensed physical therapist instructor</li>
-                            <li>Learn vital signs and other screening procedures</li>
-                            <li>Internship with our on-site athletic trainer</li>
-                            <li>Learn taping and injury prevention skills</li>
-                            <li>Strength and Conditioning/Performance Testing of athletes</li>
-                            <li>Nutrition analysis of patients</li>
-                        </ul>
                     </div>
 
-                    <div class="col-1-2">
-                        <strong><u>Medical Assisting</u></strong>
-                        <ul>
-                            <li>Learn vital sign assessment</li>
-                            <li>Customer Service skills including phone and written communication</li>
-                            <li>Learn to help physician’s in their office setting</li>
-                            <li>Learn skills of sterilizing instruments in a physician’s office</li>
-                            <li>Learn how to give shots</li>
-                            <li>Learn billing and coding skills in working with insurance reimbursement</li>
-                            <li>Learn other physical exam skills like ear, eye, and throat examination</li>
-                        </ul>
-                    </div>
-                </div>    
-            </section>
-            
-            <section>
-                <div class="bio">
-                    <strong>David Tatlock, PT, CSCS</strong>
-                    <img class="media-right icon" src="img/academy_logo_icon.png">
                     <p>
-                        <img src="img/20150128_100607.jpg" class="media-left portrait">
-                        David is the founding instructor of the Mojave Medical Academy and has over 20 years’ experience 
-                        as a fellowship trained physical therapist. David has worked in orthopedics/sports medicine, geriatric 
-                        and neurology care, and traumatic brain injuries in 3 different states and he performed a sports medicine
-                        fellowship at Auburn University in 1994. Before David became an instructor, he was keeping the members of 
-                        Cirque Du Soleil performing at their best while he was a physical therapist and strength coach for the show
-                        “KA” at the MGM Grand for 4 years.
+                        Have you ever thought of working in the medical field? Do you want a career in healthcare helping 
+                        people fight illness and return to function from injury? Are you interested in working hard in a 
+                        prestigious and rigorous program that gives you opportunities to learn actual medical skills with 
+                        actual patients? If the answer is yes to all of these questions, then applying to the Mojave Medical 
+                        Academy is a step you should take. The Mojave Medical Academy was established in 2013 and is now 
+                        offering students the opportunity to take medical classes that were previously only available to medical 
+                        magnet schools.
                     </p>
-                    
+
                     <p>
-                        David helped start the medical academy at East Career and Technical Academy in 2008 and was an 
-                        instructor there for 5 years helping it become one of the largest medical academies in the state 
-                        of Nevada. David is excited to now be involved with a medical academy in his own neighborhood and
-                        helping the students at Mojave Medical Academy strive for a successful career in the medical field.
-                        David is married with two daughters who are both in college—Hannah – 19 and Mary Catherine-18. David 
-                        enjoys playing tennis and singing with his church choir.
+                        The Mojave Medical Academy has a 3 year program sequence that you can start as a freshman or sophomore. 
+                        Our program currently has two branches of study that you will focus on during your second and 3rd year. 
+                        You can either choose a pathway in Physical Therapy/Sports Medicine or Medical Assisting. You will leave 
+                        our academy with an advanced knowledge of the healthcare field and actual patient care experience that 
+                        you can learn in our very own physical therapy/rehabilitation clinic.
+                    </p>
+
+                    <p>
+                        As a member of the Mojave Medical Academy, you will have a scrub uniform and take numerous field trips 
+                        during your time here. You will have the opportunity for observations, volunteer experiences and even 
+                        possible internships in our local medical community. You will be able to compete in national healthcare
+                        competitions against other students in the united states in health science programs and have chances to 
+                        win awards and scholarships.
+                    </p>
+
+                    <p>
+                        The benefits of the Mojave Medical Academy do not stop at graduation from high school, as now you will 
+                        have advanced preparation and training to work in the medical field directly after high school or excel 
+                        in college as you work towards professional careers in the medical field. You will confidently take 
+                        difficult classes on your way to becoming a physician, nurse, physical therapist, optometrist, pharmacist, 
+                        lab scientist, nuclear medicine specialist, and many other careers because of your advanced training by 
+                        the experienced faculty that direct the Mojave Medical Academy.
                     </p>
                 </div>
-            </section>
-            
-            <section>
-                <div class="bio">
-                    <strong>David Tatlock, PT, CSCS</strong>
-                    <img class="media-right icon" src="img/academy_logo_icon.png">
-                    <p>
-                        <img src="img/IMG_1183.JPG" class="media-left portrait">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, eros id volutpat sodales, 
-                        ipsum ligula tristique turpis, vel facilisis velit dolor et odio. Donec vel neque et dui dapibus interdum.
-                        Proin aliquam sit amet quam ut eleifend. Sed sed varius est, sagittis condimentum lectus. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit. Sed non eleifend ex, ac maximus tellus. Phasellus tristique massa nunc,
-                        sed vestibulum risus elementum et. Mauris sit amet posuere neque, fermentum condimentum diam. Nunc sit amet
-                        malesuada metus. Nam id tellus
-                    </p>
                 
-                    <p>
-                        David helped start the medical academy at East Career and Technical Academy in 2008 and was an 
-                        instructor there for 5 years helping it become one of the largest medical academies in the state 
-                        of Nevada. David is excited to now be involved with a medical academy in his own neighborhood and
-                        helping the students at Mojave Medical Academy strive for a successful career in the medical field.
-                        David is married with two daughters who are both in college—Hannah – 19 and Mary Catherine-18. David 
-                        enjoys playing tennis and singing with his church choir.
-                    </p>
-                </div>
-            
                 <div class="row">
+                    <h3>Physical Therapy/Sports Medicine/Orthapedics</h3>
+                    <ul>
+                        <li>Learn hands on examination skills of orthopedic injuries</li>
+                        <li>
+                            Help see real patients in our physical therapy/sports medicine clinic -- “Institute of Health, 
+                            Healing and Human Performance”
+                        </li>
+                        <li>Help treat patients in our physical therapy clinic with our licensed physical therapist instructor</li>
+                        <li>Learn vital signs and other screening procedures</li>
+                        <li>Internship with our on-site athletic trainer</li>
+                        <li>Learn taping and injury prevention skills</li>
+                        <li>Strength and Conditioning/Performance Testing of athletes</li>
+                        <li>Nutrition analysis of patients</li>
+                    </ul>
+
                     <h3>Medical Assisting</h3>
-                    <div class="col-1-3">
-                        <h4>First Year: Health Science 1</h4>
+                    <ul>
+                        <li>Learn vital sign assessment</li>
+                        <li>Customer Service skills including phone and written communication</li>
+                        <li>Learn to help physician’s in their office setting</li>
+                        <li>Learn skills of sterilizing instruments in a physician’s office</li>
+                        <li>Learn how to give shots</li>
+                        <li>Learn billing and coding skills in working with insurance reimbursement</li>
+                        <li>Learn other physical exam skills like ear, eye, and throat examination</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Meet the Instructors</h2>
+                <div class="row">
+                    <div class="bio">
+                        <h3>David Tatlock, PT, CSCS</h3>
+                        <img class="pull-right icon" src="img/academy_logo_icon.png">
+                        <p>
+                            <img src="img/20150128_100607.jpg" class="pull-left portrait">
+                            David is the founding instructor of the Mojave Medical Academy and has over 20 years’ experience 
+                            as a fellowship trained physical therapist. David has worked in orthopedics/sports medicine, geriatric 
+                            and neurology care, and traumatic brain injuries in 3 different states and he performed a sports medicine
+                            fellowship at Auburn University in 1994. Before David became an instructor, he was keeping the members of 
+                            Cirque Du Soleil performing at their best while he was a physical therapist and strength coach for the show
+                            “KA” at the MGM Grand for 4 years.
+                        </p>
+
+                        <p>
+                            David helped start the medical academy at East Career and Technical Academy in 2008 and was an 
+                            instructor there for 5 years helping it become one of the largest medical academies in the state 
+                            of Nevada. David is excited to now be involved with a medical academy in his own neighborhood and
+                            helping the students at Mojave Medical Academy strive for a successful career in the medical field.
+                            David is married with two daughters who are both in college—Hannah – 19 and Mary Catherine-18. David 
+                            enjoys playing tennis and singing with his church choir.
+                        </p>
+                    </div>
+
+                    <div class="bio">
+                        <h3>Rae Dungao</h3>
+                        <img class="pull-right icon" src="img/academy_logo_icon.png">
+                        <p>
+                            <img src="img/IMG_1183.JPG" class="pull-left portrait">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, eros id volutpat sodales, 
+                            ipsum ligula tristique turpis, vel facilisis velit dolor et odio. Donec vel neque et dui dapibus interdum.
+                            Proin aliquam sit amet quam ut eleifend. Sed sed varius est, sagittis condimentum lectus. Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit. Sed non eleifend ex, ac maximus tellus. Phasellus tristique massa nunc,
+                            sed vestibulum risus elementum et. Mauris sit amet posuere neque, fermentum condimentum diam. Nunc sit amet
+                            malesuada metus. Nam id tellus
+                        </p>
+
+                        <p>
+                            David helped start the medical academy at East Career and Technical Academy in 2008 and was an 
+                            instructor there for 5 years helping it become one of the largest medical academies in the state 
+                            of Nevada. David is excited to now be involved with a medical academy in his own neighborhood and
+                            helping the students at Mojave Medical Academy strive for a successful career in the medical field.
+                            David is married with two daughters who are both in college—Hannah – 19 and Mary Catherine-18. David 
+                            enjoys playing tennis and singing with his church choir.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="courses">
+                <h2>Courses of Study</h2>
+                <div class="row">
+                    <h3>Medical Assisting Track</h3>
+                    <div>
+                        <h4>Health Science 1</h4>
                         <p>
                             This one-year course introduces students to health occupations with a clinical perspective. 
                             This course includes medical terminology, health care careers and systems, safety, legal 
@@ -263,8 +293,8 @@
                         </p>
                     </div>
 
-                    <div class="col-1-3">
-                        <h4>Second Year: Health Science 2</h4>
+                    <div>
+                        <h4>Health Science 2</h4>
                         <p>
                             This one-year course provides students who have successfully completed Health Science I with a 
                             clinical perspective of anatomy and physiology. Emphasis is placed on the organization, 
@@ -276,25 +306,25 @@
                         </p>
                     </div>
 
-                    <div class="col-1-3">
-                        <h4>Third Year: Medical Assisting</h4>
+                    <div>
+                        <h4>Medical Assisting</h4>
                         <p>
                             This one-year course provides students who have successfully completed Health Science II with 
                             the skills required for entry into the health care field. Demonstrations and laboratory experiences 
-                                are an integral part of this course. Instructional practices incorporate integration of diversity 
+                            are an integral part of this course. Instructional practices incorporate integration of diversity 
                             awareness including appreciation of all cultures and their important contributions to our society. 
                             The appropriate use of technology is an integral part of this course. This course fulfills one of the 
                             elective credits required for high school graduation.
                         </p>
                     </div>  
                 </div>
-            </section>
-            
-            <section>
+
+                <hr>
+                
                 <div class="row">
-                    <h3>Physical Therapy/Sports Medicine</h3>
-                    <div class="col-1-3">
-                        <h4>First Year: Health Science 1</h4>
+                    <h3>Physical Therapy/Sports Medicine Track</h3>
+                    <div>
+                        <h4>Health Science 1</h4>
                         <p>
                             This one-year course introduces students to health occupations with a clinical perspective. 
                             This course includes medical terminology, health care careers and systems, safety, legal 
@@ -305,8 +335,8 @@
                         </p>
                     </div>
                     
-                    <div class="col-1-3">
-                        <h4>Second Year: Sports Medicine 1</h4> 
+                    <div>
+                        <h4>Sports Medicine 1</h4> 
                         <p>
                             This one-year course is designed for students who have successfully completed Health Science I. 
                             Students are provided instruction in sports medicine terminology, physical fitness, anatomy and 
@@ -318,8 +348,8 @@
                         </p>
                     </div>
                     
-                    <div class="col-1-3">
-                        <h4>Third Year: Sports Medicine 2</h4>
+                    <div>
+                        <h4>Sports Medicine 2</h4>
                         <p>
                             This one-year course will give students hands-on experience evaluating injuries commonly 
                             sustained by the competitive athlete.  It includes all areas of sports medicine such as sports 
