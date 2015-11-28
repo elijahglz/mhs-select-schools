@@ -12,47 +12,16 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         
         <style>
-            
             *, *:after, *:before {
                 box-sizing: border-box;
             }
             
-            div.video {
-                float: right;
-                margin: 0 0 20px 20px;
-            }
-
-            div.bio {
-                background-color:#616362;
-                color: #FFFFFF;
-                border:groove;
-                border-color:#ffae19;
-                padding:10px;
-                clear: both;
-                margin-bottom: 10px;
-            }
-
-            div.physical-therapy {
-                 clear: both;
-            }
-
-            
-            img.tatlock {
-                float: left;
-                margin-right: 5px;
-            }
-
-            img.bio2 {
-                float: left;
-                margin-right: 5px; 
-            }
-
             strong {
                 font-size: 18px;
             }
             
             .container {
-                width: 940px;
+                width: 608px;
                 margin-right: auto;
                 margin-left: auto;
             }
@@ -87,7 +56,59 @@
             section {
                 margin-bottom: 40px;
             }
+
+            .bio {
+                background-color:#616362;
+                color: #FFFFFF;
+                border: 3px groove #ffae19;
+                padding: 20px;
+                margin-bottom: 60px;
+                position: relative;
+            }
             
+            .media-right {
+                float: right;
+            }
+            
+            .media-left {
+                float: left;
+            }
+            
+            .icon {
+                height: 80px;
+                position: absolute;
+                top: -40px;
+                right: -40px;
+            }
+            
+            .portrait {
+                height: 100px;
+                padding-right: 20px;
+                padding-bottom: 5px;
+            }
+            
+            .media-player {
+                background: #616362;
+                border: 3px groove #ffae19;
+                padding: 10px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                position: relative;
+            }
+            
+            .media-player iframe {
+                border: none;
+                padding: 0;
+            }
+            
+            .tracks {
+                margin-top: 5px;
+            }
+            
+            .tracks img {
+                height: 80px;
+                padding-right: 8px;
+            }
         </style>
     </head>
     <body>
@@ -96,12 +117,15 @@
                 <div class="row">
                         <h3><u><em>About our Medical Program</em></u></h3>
 
-                        <div class="video">
-                            <video width="520" controls>
-                                <source src="vid/Mojave%20HS%20Spotlight.m4v" type="video/mp4">
-                                <source src="vid/Mojave_HS_Spotlight.webm" type="video/webm">
-                                Your browser does not support the video tag.
-                            </video>
+                        <div class="media-right">
+                            <div class="media-player">
+                                <img class="media-right icon" src="img/academy_logo_icon.png">
+                                <iframe name="media_player" width="396" height="230" src="vid/mojave_hs_spotlight.html" allowFullScreen></iframe>
+                                <div class="tracks">
+                                    <a target="media_player" href="vid/mojave_hs_spotlight.mp4"><img src="vid/mojave_hs_spotlight_thumbnail.png"></a>
+                                    <a target="media_player" href="vid/whats_cool_at_school.mp4"><img src="vid/whats_cool_at_school_thumbnail.png"></a>
+                                </div>
+                            </div>
                         </div>
 
                         <p>
@@ -179,9 +203,9 @@
             <section>
                 <div class="bio">
                     <strong>David Tatlock, PT, CSCS</strong>
-                    <img src="img/mohave_logo_orangefnl.png" align="right" height="50px">
+                    <img class="media-right icon" src="img/academy_logo_icon.png">
                     <p>
-                        <img src="img/20150128_100607.jpg" class="tatlock" height="100px">
+                        <img src="img/20150128_100607.jpg" class="media-left portrait">
                         David is the founding instructor of the Mojave Medical Academy and has over 20 years’ experience 
                         as a fellowship trained physical therapist. David has worked in orthopedics/sports medicine, geriatric 
                         and neurology care, and traumatic brain injuries in 3 different states and he performed a sports medicine
@@ -204,9 +228,9 @@
             <section>
                 <div class="bio">
                     <strong>David Tatlock, PT, CSCS</strong>
-                    <img src="img/mohave_logo_orangefnl.png" align="right" margin-top="5px" height="50px">
+                    <img class="media-right icon" src="img/academy_logo_icon.png">
                     <p>
-                        <img src="img/IMG_1183.JPG"class="bio2" height="100px">
+                        <img src="img/IMG_1183.JPG" class="media-left portrait">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, eros id volutpat sodales, 
                         ipsum ligula tristique turpis, vel facilisis velit dolor et odio. Donec vel neque et dui dapibus interdum.
                         Proin aliquam sit amet quam ut eleifend. Sed sed varius est, sagittis condimentum lectus. Lorem ipsum dolor
@@ -309,9 +333,6 @@
                     </div>
                 </div>
             </section>   
-            <a href="http://www.lasvegasnow.com/news/whats-cool-at-school-mojave-medical-academy" text-align="center">
-                Check out the Mojave's Medical Academy on What's cool at school.
-            </a>
         </div>
     </body>
 </html>
