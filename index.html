@@ -13,50 +13,15 @@
         
         <style>
             
-            *, *:after, *:before {
+*, *:after, *:before {
                 box-sizing: border-box;
             }
             
-            div.video {
-                float: right;
-                margin: 0 0 20px 20px;
-            }
-
-            div.bio {
-                background-color:#616362;
-                color: #FFFFFF;
-                border:groove;
-                border-color:#ffae19;
-                padding:10px;
-                clear: both;
-                margin-bottom: 10px;
-            }
-
-            div.physical-therapy {
-                 clear: both;
-            }
-
-            
-            img.tatlock {
-                float: left;
-                margin-right: 5px;
-            }
-
-            img.bio2 {
-                float: left;
-                margin-right: 5px; 
-            }
-
-            strong {
-                font-size: 18px;
-            }
-            
             .container {
-                width: 940px;
+                width: 608px;
                 margin-right: auto;
                 margin-left: auto;
             }
-
             .row:after {
                 content: "";
                 display: table;
@@ -88,20 +53,114 @@
                 margin-bottom: 40px;
             }
             
+            .pull-right {
+                float: right;
+            }
+            
+            .pull-left {
+                float: left;
+            }
+            
+            .bio {
+                background-color:#616362;
+                color: #FFFFFF;
+                border: 3px groove #ffae19;
+                padding: 20px;
+                margin-bottom: 60px;
+                position: relative;
+            }
+            
+            .bio:last-of-type {
+                margin-bottom: 0;
+            }
+            
+            .bio h3 {
+                margin-top: 0;
+            }
+            
+            .icon {
+                height: 80px;
+                position: absolute;
+                top: -40px;
+                right: -40px;
+            }
+            
+            .portrait {
+                height: 100px;
+                padding-right: 20px;
+                padding-bottom: 5px;
+            }
+            
+            .media-player {
+                background: #616362;
+                border: 3px groove #ffae19;
+                padding: 10px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                position: relative;
+            }
+            
+            .media-player iframe {
+                border: none;
+                padding: 0;
+            }
+            
+            .tracks {
+                margin-top: 5px;
+            }
+            
+            .tracks img {
+                height: 80px;
+                padding-right: 8px;
+            }
+            
+            p {
+                margin-top: 0;
+                margin-bottom: 22px;
+            }
+            
+            p:last-of-type {
+                margin-bottom: 0;
+            }
+            
+            h2 {
+                font-style: italic;
+            }
+            
+            hr {
+                border: none;
+                height: 1px;
+                background-color: #ffae19;
+            }
+            
+            .courses h4 {
+                margin-top: 20px;
+                margin-bottom: 8px;
+            }
+            
         </style>
     </head>
     <body>
         <div class="container"> 
             <section>
                 <div class="row">
-                        <h3><u><em>About our Medical Program</em></u></h3>
+                        <h2>About our Medical Program</h2>
 
-                        <div class="video">
-                            <video width="520" controls>
-                                <source src="vid/Mojave%20HS%20Spotlight.m4v" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                        <div class="pull-right">
+                        <div class="media-player">
+                            <img class="pull-right icon" src="img/academy_logo_icon.png">
+                            <iframe name="media_player" width="396" height="230" src="vid/mojave_hs_spotlight.html" allowFullScreen>
+                            </iframe>
+                            <div class="tracks">
+                                <a target="media_player" href="vid/mojave_hs_spotlight.mp4">
+                                    <img src="vid/mojave_hs_spotlight_thumbnail.png" title="Medical Academny Spotlight">
+                                </a>
+                                <a target="media_player" href="vid/whats_cool_at_school.mp4">
+                                    <img src="vid/whats_cool_at_school_thumbnail.png" title="New 8 What's Cool at School">
+                                </a>
+                            </div>
                         </div>
+                    </div>
 
                         <p>
                             Have you ever thought of working in the medical field? Do you want a career in healthcare helping 
