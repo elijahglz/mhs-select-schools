@@ -13,7 +13,7 @@
         
         <style>
             
-*, *:after, *:before {
+            *, *:after, *:before {
                 box-sizing: border-box;
             }
             
@@ -137,12 +137,60 @@
                 margin-top: 20px;
                 margin-bottom: 8px;
             }
+            .nav ul {
+                list-style-type: none;
+                margin-top: 10px;
+                padding: 0;
+                overflow: hidden;
+                background-color: #00FFFFFFF;
+                text-align: center;
+            }
+
+            .nav li {
+                display: inline;
+                padding: 14px 8px;
+            }
             
+           .nav li a {
+                display: inline-block;
+                color: #000000;
+                text-align: center;
+                padding-bottom: 5px;
+                text-decoration: none;
+                border-bottom: 3px solid transparent;
+            }
+
+           .nav li a:hover {
+                background-color: #00FFFFFFF;
+                border-bottom: 3px solid #ffae19;
+            }
+            
+            .nav li .btn {
+                background-color: #ffae19;
+                border: 2px solid #ffae19;
+                padding: 3px 30px;
+                color: #fff;
+                transition: all .6s;
+            }
+            
+            .nav li .btn:hover {
+                background-color: white;
+                border: 2px solid #ffae19;
+                color: #ffae19;
+            }
         </style>
     </head>
     <body>
-        <div class="container"> 
-            <section>
+        <div class="container">
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="#about">About</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="http://itsyourchoice.ccsd.net/select-schools/" class="btn">Apply Now</a></li>
+            </ul>
+        </div>
+            <section id="about">
                 <div class="row">
                         <h2>About our Medical Program</h2>
 
@@ -230,122 +278,120 @@
                 </div>    
             </section>
             
-            <div class="bio">
-                <h3>David Tatlock, PT, CSCS</h3>
-                <img class="pull-right icon" src="img/academy_logo_icon.png">
-                <p>
-                    <img class="pull-left portrait" src="img/20150128_100607.jpg">
-                    David is the founding instructor of the Mojave Medical Academy and has over 20 years’ experience 
-                    as a fellowship trained physical therapist. David has worked in orthopedics/sports medicine, geriatric 
-                    and neurology care, and traumatic brain injuries in 3 different states and he performed a sports medicine
-                    fellowship at Auburn University in 1994. Before David became an instructor, he was keeping the members of 
-                    Cirque Du Soleil performing at their best while he was a physical therapist and strength coach for the show
-                    “KA” at the MGM Grand for 4 years.
-                </p>
+            <section id="instructors">
+                <div class="bio">
+                    <h3>David Tatlock, PT, CSCS</h3>
+                    <img class="pull-right icon" src="img/academy_logo_icon.png">
+                    <p>
+                        <img class="pull-left portrait" src="img/20150128_100607.jpg">
+                        David is the founding instructor of the Mojave Medical Academy and has over 20 years’ experience 
+                        as a fellowship trained physical therapist. David has worked in orthopedics/sports medicine, geriatric 
+                        and neurology care, and traumatic brain injuries in 3 different states and he performed a sports medicine
+                        fellowship at Auburn University in 1994. Before David became an instructor, he was keeping the members of 
+                        Cirque Du Soleil performing at their best while he was a physical therapist and strength coach for the show
+                        “KA” at the MGM Grand for 4 years.
+                    </p>
+                    
+                    <p>
+                        David helped start the medical academy at East Career and Technical Academy in 2008 and was an 
+                        instructor there for 5 years helping it become one of the largest medical academies in the state 
+                        of Nevada. David is excited to now be involved with a medical academy in his own neighborhood and
+                        helping the students at Mojave Medical Academy strive for a successful career in the medical field.
+                        David is married with two daughters who are both in college—Hannah – 19 and Mary Catherine-18. David 
+                        enjoys playing tennis and singing with his church choir.
+                    </p>
+                </div>
+                    
+                <div class="bio">
+                    <h3>Rae Dungao</h3>
+                    <img class="pull-right icon" src="img/academy_logo_icon.png">
+                    <p>
+                        <img class="pull-left portrait" src="img/IMG_1183.JPG" height="100px">
+                        Rae Dungao has a Bachelor’s of Nursing from San Pedro College in the Phillipines, and worked at San Pedro
+                        Hospital in Med/Surg and Labor/Delivery. After coming to the United States, Ms. Dungao has worked in the areas
+                        of psychiatric and home care treatment. Ms. Dungao has been instructing in medical assisting programs for the
+                        last 6 years at the Academy of the Healing Arts and later at Milan Institute. Ms. Dungao has a passion to see
+                        students learn patient care skills and successfully enter the health care field.  “When students succeed, then
+                        I succeed.” Ms. Dungao is married and has 2 children named Ashton (6) and Adrick (3). She looks forward to having
+                        the opportunity to teach your student the many and varied patient care skills that lead to opportunities in the health care field.
+                    </p>
                 
-                <p>
-                    David helped start the medical academy at East Career and Technical Academy in 2008 and was an 
-                    instructor there for 5 years helping it become one of the largest medical academies in the state 
-                    of Nevada. David is excited to now be involved with a medical academy in his own neighborhood and
-                    helping the students at Mojave Medical Academy strive for a successful career in the medical field.
-                    David is married with two daughters who are both in college—Hannah – 19 and Mary Catherine-18. David 
-                    enjoys playing tennis and singing with his church choir.
-                </p>
-            </div>
+                </div>
+            </section>
+            
+            <section id="courses">
+                <div class="row">
+                    <h3>Medical Assisting</h3>
+                    <h4>First Year: Health Science 1</h4>
+                    <p>
+                        This one-year course introduces students to health occupations with a clinical perspective. 
+                        This course includes medical terminology, health care careers and systems, safety, legal 
+                        responsibilities, wellness, and disease prevention. Instructional practices incorporate 
+                        integration of diversity awareness including appreciation of all cultures and their important
+                        contributions to society. The appropriate use of technology is an integral part of this course. 
+                        This course fulfills one of the elective credits required for high school graduation.
+                    </p>
+    
+                    <h4>Second Year: Health Science 2</h4>
+                    <p>
+                        This one-year course provides students who have successfully completed Health Science I with a 
+                        clinical perspective of anatomy and physiology. Emphasis is placed on the organization, 
+                        structure, and function of the human body, growth and development, wellness, and 
+                        pathophysiology. Instructional practices incorporate integration of diversity awareness including 
+                        appreciation of all cultures and their important contributions to society. The appropriate use of 
+                        technology is an integral part of this course. This course fulfills one of the elective credits required 
+                        for high school graduation.
+                    </p>
+    
+                    <h4>Third Year: Medical Assisting</h4>
+                    <p>
+                        This one-year course provides students who have successfully completed Health Science II with 
+                        the skills required for entry into the health care field. Demonstrations and laboratory experiences 
+                        are an integral part of this course. Instructional practices incorporate integration of diversity 
+                        awareness including appreciation of all cultures and their important contributions to our society. 
+                        The appropriate use of technology is an integral part of this course. This course fulfills one of the 
+                        elective credits required for high school graduation.
+                    </p>  
+                </div>
                 
-            <div class="bio">
-                <h3>David Tatlock, PT, CSCS</h3>
-                <img class="pull-right icon" src="img/academy_logo_icon.png">
-                <p>
-                    <img class="pull-left portrait" src="img/IMG_1183.JPG" height="100px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt, eros id volutpat sodales, 
-                    ipsum ligula tristique turpis, vel facilisis velit dolor et odio. Donec vel neque et dui dapibus interdum.
-                    Proin aliquam sit amet quam ut eleifend. Sed sed varius est, sagittis condimentum lectus. Lorem ipsum dolor
-                    sit amet, consectetur adipiscing elit. Sed non eleifend ex, ac maximus tellus. Phasellus tristique massa nunc,
-                    sed vestibulum risus elementum et. Mauris sit amet posuere neque, fermentum condimentum diam. Nunc sit amet
-                    malesuada metus. Nam id tellus
-                </p>
-            
-                <p>
-                    Cras pulvinar placerat lacinia. Vivamus vehicula, purus sit amet hendrerit tincidunt, risus massa dapibus 
-                    tellus, vitae dignissim felis mi at neque. Sed cursus ac purus eu elementum. Maecenas fringilla malesuada 
-                    tellus, eu mollis ante. Mauris consequat, magna semper suscipit rhoncus, nibh ante sollicitudin erat, vel 
-                    fringilla mi justo at sapien. Cras pretium justo nulla, mattis interdum odio varius in. Sed id scelerisque 
-                    nibh. Aliquam tempor enim ut turpis.
-                </p>
+                <hr>
+                
+                <div class="row">
+                    <h3>Physical Therapy/Sports Medicine</h3>
+                    <h4>First Year: Health Science 1</h4>
+                    <p>
+                        This one-year course introduces students to health occupations with a clinical perspective. 
+                        This course includes medical terminology, health care careers and systems, safety, legal 
+                        responsibilities, wellness, and disease prevention. Instructional practices incorporate 
+                        integration of diversity awareness including appreciation of all cultures and their important
+                        contributions to society. The appropriate use of technology is an integral part of this course. 
+                        This course fulfills one of the elective credits required for high school graduation.
+                    </p>
+    
+                    <h4>Second Year: Sports Medicine 1</h4> 
+                    <p>
+                        This one-year course is designed for students who have successfully completed Health Science I. 
+                        Students are provided instruction in sports medicine terminology, physical fitness, anatomy and 
+                        physiology, kinesiology, injury evaluation and prevention procedures, and careers in sports 
+                        medicine. Instructional practices incorporate integration of diversity awareness including 
+                        appreciation of all cultures and their important contributions to society. The appropriate use of 
+                        technology is an integral part of this course. This course fulfills one of the elective credits required 
+                        for high school graduation.
+                    </p>
+    
+                    <h4>Third Year: Sports Medicine 2</h4>
+                    <p>
+                        This one-year course will give students hands-on experience evaluating injuries commonly 
+                        sustained by the competitive athlete.  It includes all areas of sports medicine such as sports 
+                        medicine terminology, musculoskeletal anatomy, evaluation, assessment, rehabilitation, and 
+                        prevention of athletic injuries.  Emphasis will be placed on evaluating and assessing athletic 
+                        injuries.  Instructional practices will incorporate integration of diversity awareness including 
+                        appreciation of all cultures and their important contributions to our society.  The appropriate use 
+                        of technology is an integral part of this course.  This course will fulfill one elective credit required 
+                        for high school graduation.
+                    </p>
+                </div>
             </div>
-            
-            <div class="row">
-                <h3>Medical Assisting</h3>
-                <h4>First Year: Health Science 1</h4>
-                <p>
-                    This one-year course introduces students to health occupations with a clinical perspective. 
-                    This course includes medical terminology, health care careers and systems, safety, legal 
-                    responsibilities, wellness, and disease prevention. Instructional practices incorporate 
-                    integration of diversity awareness including appreciation of all cultures and their important
-                    contributions to society. The appropriate use of technology is an integral part of this course. 
-                    This course fulfills one of the elective credits required for high school graduation.
-                </p>
-
-                <h4>Second Year: Health Science 2</h4>
-                <p>
-                    This one-year course provides students who have successfully completed Health Science I with a 
-                    clinical perspective of anatomy and physiology. Emphasis is placed on the organization, 
-                    structure, and function of the human body, growth and development, wellness, and 
-                    pathophysiology. Instructional practices incorporate integration of diversity awareness including 
-                    appreciation of all cultures and their important contributions to society. The appropriate use of 
-                    technology is an integral part of this course. This course fulfills one of the elective credits required 
-                    for high school graduation.
-                </p>
-
-                <h4>Third Year: Medical Assisting</h4>
-                <p>
-                    This one-year course provides students who have successfully completed Health Science II with 
-                    the skills required for entry into the health care field. Demonstrations and laboratory experiences 
-                    are an integral part of this course. Instructional practices incorporate integration of diversity 
-                    awareness including appreciation of all cultures and their important contributions to our society. 
-                    The appropriate use of technology is an integral part of this course. This course fulfills one of the 
-                    elective credits required for high school graduation.
-                </p>  
-            </div>
-            
-            <hr>
-            
-            <div class="row">
-                <h3>Physical Therapy/Sports Medicine</h3>
-                <h4>First Year: Health Science 1</h4>
-                <p>
-                    This one-year course introduces students to health occupations with a clinical perspective. 
-                    This course includes medical terminology, health care careers and systems, safety, legal 
-                    responsibilities, wellness, and disease prevention. Instructional practices incorporate 
-                    integration of diversity awareness including appreciation of all cultures and their important
-                    contributions to society. The appropriate use of technology is an integral part of this course. 
-                    This course fulfills one of the elective credits required for high school graduation.
-                </p>
-
-                <h4>Second Year: Sports Medicine 1</h4> 
-                <p>
-                    This one-year course is designed for students who have successfully completed Health Science I. 
-                    Students are provided instruction in sports medicine terminology, physical fitness, anatomy and 
-                    physiology, kinesiology, injury evaluation and prevention procedures, and careers in sports 
-                    medicine. Instructional practices incorporate integration of diversity awareness including 
-                    appreciation of all cultures and their important contributions to society. The appropriate use of 
-                    technology is an integral part of this course. This course fulfills one of the elective credits required 
-                    for high school graduation.
-                </p>
-
-                <h4>Third Year: Sports Medicine 2</h4>
-                <p>
-                    This one-year course will give students hands-on experience evaluating injuries commonly 
-                    sustained by the competitive athlete.  It includes all areas of sports medicine such as sports 
-                    medicine terminology, musculoskeletal anatomy, evaluation, assessment, rehabilitation, and 
-                    prevention of athletic injuries.  Emphasis will be placed on evaluating and assessing athletic 
-                    injuries.  Instructional practices will incorporate integration of diversity awareness including 
-                    appreciation of all cultures and their important contributions to our society.  The appropriate use 
-                    of technology is an integral part of this course.  This course will fulfill one elective credit required 
-                    for high school graduation.
-                </p>
-            </div>
-        </div>
+        </section>
     </body>
 </html>
