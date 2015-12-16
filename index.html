@@ -178,8 +178,12 @@
                 border: 2px solid #ffae19;
                 color: #ffae19;
             }
-          
+            
             .social-media {
+                display: inline-block;
+            }
+            
+            .social-media .media-btn {
                 border-radius: 50px;
                 display: inline-block;
                 position: relative;
@@ -190,36 +194,29 @@
                 bottom: -10px;
             }
             
+            .social-media .media-btn:hover {
+                background-color: #ffae19;
+                color: #fff;
+                transition: all 0.4s;
+                
+            }
+            
             .social-media i {
                 position: absolute;
-                bottom: 5px;
-                left: 8px;
+                bottom: 3px;
             }
             
             .social-media .fa-facebook {
-                position: absolute;
-                bottom: 7px;
                 left: 8px;     
             }
             
             .social-media .fa-youtube {
-                position: absolute;
-                bottom: 7px;
                 left: 6px;
             }
             
             .social-media .fa-instagram {
-                position: absolute;
-                bottom: 7px;
                 left: 6px;
             }
-            
-            .social-media:hover {
-                background-color: #ffae19;
-                color: #fff;
-                transition: all  ease-in-out 0.4s;
-                
-            }   
        </style>
     </head>
     
@@ -229,11 +226,13 @@
             <ul>
                 <li><a class="line" href="#about">About</a></li>
                 <li><a class="line" href="#instructors">Instructors</a></li>
-                <li><a class="line"href="#courses">Courses</a></li>
+                <li><a class="line" href="#courses">Courses</a></li>
                 <li><a href="http://itsyourchoice.ccsd.net/select-schools/" class="btn">Apply Now</a></li>
-                <li><div class="social-media"><i class="fa fa-facebook fa-lg"></i></div></li>
-                <li><div class="social-media"><i class="fa fa-youtube fa-lg"></i></div></li>
-                <li><a href="#"><div class="social-media"><i class="fa fa-instagram fa-lg"></i></div></a></li>
+                <div class="social-media">
+                    <li><a href="https://www.facebook.com/Mojave-Medical-Academy-1431733613803261/" class="media-btn"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCEx2S514WMUMIiiEsYiGyyw" class="media-btn"><i class="fa fa-youtube fa-lg"></i></a></li>
+                    <li><a href="#" class="media-btn"><i class="fa fa-instagram fa-lg"></i></a></li>
+                </div>
             </ul>
         </div>
             <section id="about">
